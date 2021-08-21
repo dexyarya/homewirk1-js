@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0-rc.1/dist/js.cookie.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="bacgrount-color.js"></script>
+    <script src="date-time.js"></script>
+    <script src="ConvertTemperature.js"></script>
+    <title>Temperatur Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Temperatur Converter</div>
+        <div class="date" id="date">2021 August 20 FRI</div>
+        <div class="time" id="time">PM 08:38:22</div>
+       
+        <div class="formSelect">
+            <select class="select" name="from" id="from" onchange="select()">
+                <option value="celcius">celcius</option>
+                <option value="farenheit">farenheit</option>
+                <option value="reamur">reamure</option>
+            </select>
+            to
+            <select class="select" name="to" id="to" onchange="select()">
+                <option value="celcius">celcius</option>
+                <option value="farenheit">farenheit</option>
+                <option value="reamur">reamure</option>
+            </select>
+        </div>
+
+        <div class="divinput">
+            <label>Temperature</label>
+            <input class="input" 
+            type="number" 
+            id="number"
+            placeholder="input number"
+            onkeyup="con()"
+            />
+    
+            <label>Hasil</label>
+            <input class="result" 
+            type="number" 
+            id="result"
+            placeholder="result"
+            disabled>
+        </div>
+
+        <div class="change"">
+            <label>Change Bacgrount Color</label>
+            <input class="inputbagrount" id="color" placeholder="input color"/>
+            <button type="button" class="button" onclick="changeColor()">
+                Change
+            </button>
+        </div>
+    </div>
+</body>
+</html>

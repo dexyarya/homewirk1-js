@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+$bg-color:#ecf0f3;
+$blue-color:#1DA1F2;
+$blue2-color:#9bc3ec;
+$bg-shadow:#cbced1;
+$white-color:#fff;
+
+body{
+    margin:0;
+    width:100vw;
+    height:100vh;
+    background:#ecf0f3;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    overflow: hidden;
+    font-family: Poppins;
+}
+
+.container{
+    position: relative;
+    position: relative;
+    width: 600px;
+    height: auto;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: $bg-color;
+
+    .date,.time{
+        margin-top: 10px;
+        font-weight: 600;
+        font-size:1.2rem;
+        color:$blue-color;
+        letter-spacing: 1px;
+    }
+    
+    .title{
+        margin-top: 8px;
+        font-weight: 600;
+        font-size:1.8rem;
+        color:$blue-color;
+        letter-spacing: 1px;
+    }
+
+    .formSelect{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .divinput,.change{
+        text-align: left;
+    }
+
+    .select,.input,.result{
+        display: block;
+        width: 100%;
+        padding:0;
+        border:none;
+        outline: none;
+        box-sizing: border-box;
+    }
+    
+    .change{
+        margin-top: 30px;
+
+        .inputbagrount,.button{
+            display: block;
+            width: 50%;
+            border:none;
+            outline: none;
+            box-sizing: border-box;
+
+        }
+
+    }
+
+    .input,.result,.select,.inputbagrount{
+        background:$bg-color;
+        padding-right: 20px;
+        padding-left: 20px;
+        height: 50px;
+        font-size: 14px;
+        border-radius: 50px;
+        box-shadow: inset 6px 6px 6px $bg-shadow, inset -6px -6px 6px $white-color;;
+    }
+
+    button {
+        margin-top: 20px;
+        background: $blue-color;
+        height: 40px;
+        color: $white-color;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 900;
+        box-shadow: 6px 6px 6px $blue2-color, -6px -6px 6px $blue2-color;
+        transition: 0.5s;
+      }
+
+      button:hover {
+        box-shadow: none;
+      }
+}

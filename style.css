@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ecf0f3;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
+  font-family: Poppins;
+}
+
+.container {
+  position: relative;
+  position: relative;
+  width: 600px;
+  height: auto;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+}
+.container .date, .container .time {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #1DA1F2;
+  letter-spacing: 1px;
+}
+.container .title {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #1DA1F2;
+  letter-spacing: 1px;
+}
+.container .formSelect {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.container .divinput, .container .change {
+  text-align: left;
+}
+.container .select, .container .input, .container .result {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+.container .change {
+  margin-top: 30px;
+}
+.container .change .inputbagrount, .container .change .button {
+  display: block;
+  width: 50%;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+.container .input, .container .result, .container .select, .container .inputbagrount {
+  background: #ecf0f3;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px #fff;
+}
+.container button {
+  margin-top: 20px;
+  background: #1DA1F2;
+  height: 40px;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #9bc3ec, -6px -6px 6px #9bc3ec;
+  transition: 0.5s;
+}
+.container button:hover {
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=style.css.map */
